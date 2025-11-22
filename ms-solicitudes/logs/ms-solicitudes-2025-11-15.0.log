@@ -1,0 +1,99 @@
+2025-11-15 23:04:51.106 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-15 23:04:51.261 [main] INFO  c.t.s.MsSolicitudesApplication - Starting MsSolicitudesApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 22824 (D:\Users\Usuario\Desktop\backend1\ms-solicitudes\target\ms-solicitudes-0.0.1-SNAPSHOT.jar started by Usuario- in D:\Users\Usuario\Desktop\backend1\ms-solicitudes)
+2025-11-15 23:04:51.262 [main] DEBUG c.t.s.MsSolicitudesApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-15 23:04:51.264 [main] INFO  c.t.s.MsSolicitudesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-15 23:04:53.874 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-15 23:04:54.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 270 ms. Found 5 JPA repository interfaces.
+2025-11-15 23:04:55.446 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-11-15 23:04:55.468 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-11-15 23:04:55.474 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-15 23:04:55.474 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-15 23:04:55.560 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-15 23:04:55.561 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4163 ms
+2025-11-15 23:04:56.029 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-15 23:04:56.791 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@118fbaf0
+2025-11-15 23:04:56.793 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-15 23:04:56.930 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/solicitudes_db (PostgreSQL 16.10)
+2025-11-15 23:04:57.595 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.373s)
+2025-11-15 23:04:57.727 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 005
+2025-11-15 23:04:57.734 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-11-15 23:04:57.920 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-15 23:04:58.037 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-15 23:04:58.109 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-15 23:04:58.753 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-15 23:04:58.923 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-15 23:05:00.630 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-15 23:05:01.700 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-15 23:05:03.941 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-15 23:05:04.653 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-15 23:05:05.787 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-11-15 23:05:05.801 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-11-15 23:05:05.815 [main] INFO  c.t.s.MsSolicitudesApplication - Started MsSolicitudesApplication in 15.34 seconds (process running for 16.579)
+2025-11-15 23:13:37.782 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-15 23:13:37.858 [main] INFO  c.t.s.MsSolicitudesApplication - Starting MsSolicitudesApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 13688 (D:\Users\Usuario\Desktop\backend1\ms-solicitudes\target\ms-solicitudes-0.0.1-SNAPSHOT.jar started by Usuario- in D:\Users\Usuario\Desktop\backend1\ms-solicitudes)
+2025-11-15 23:13:37.862 [main] DEBUG c.t.s.MsSolicitudesApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-15 23:13:37.863 [main] INFO  c.t.s.MsSolicitudesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-15 23:13:39.797 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-15 23:13:40.086 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 277 ms. Found 5 JPA repository interfaces.
+2025-11-15 23:13:41.292 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-11-15 23:13:41.311 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-11-15 23:13:41.323 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-15 23:13:41.356 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-15 23:13:41.448 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-15 23:13:41.450 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3509 ms
+2025-11-15 23:13:41.940 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-15 23:13:42.301 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54275b5d
+2025-11-15 23:13:42.303 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-15 23:13:42.349 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/solicitudes_db (PostgreSQL 16.10)
+2025-11-15 23:13:42.460 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.064s)
+2025-11-15 23:13:42.502 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 005
+2025-11-15 23:13:42.512 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-11-15 23:13:42.710 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-15 23:13:42.830 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-15 23:13:42.930 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-15 23:13:43.581 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-15 23:13:43.691 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-15 23:13:45.248 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-15 23:13:45.637 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-15 23:13:47.119 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-15 23:13:47.622 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-15 23:13:48.727 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-11-15 23:13:48.741 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-11-15 23:13:48.761 [main] INFO  c.t.s.MsSolicitudesApplication - Started MsSolicitudesApplication in 11.62 seconds (process running for 12.919)
+2025-11-15 23:14:04.120 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-15 23:14:04.123 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-15 23:14:04.163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-15 23:19:38.390 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-15 23:19:38.488 [main] INFO  c.t.s.MsSolicitudesApplication - Starting MsSolicitudesApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 19376 (D:\Users\Usuario\Desktop\backend1\ms-solicitudes\target\ms-solicitudes-0.0.1-SNAPSHOT.jar started by Usuario- in D:\Users\Usuario\Desktop\backend1\ms-solicitudes)
+2025-11-15 23:19:38.489 [main] DEBUG c.t.s.MsSolicitudesApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-15 23:19:38.492 [main] INFO  c.t.s.MsSolicitudesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-15 23:19:40.310 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-15 23:19:40.631 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 305 ms. Found 5 JPA repository interfaces.
+2025-11-15 23:19:41.952 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-11-15 23:19:41.969 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-11-15 23:19:41.996 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-15 23:19:42.004 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-15 23:19:42.133 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-15 23:19:42.134 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3561 ms
+2025-11-15 23:19:42.851 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-15 23:19:43.247 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@778113f2
+2025-11-15 23:19:43.255 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-15 23:19:43.329 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/solicitudes_db (PostgreSQL 16.10)
+2025-11-15 23:19:43.480 [main] INFO  o.f.c.internal.command.DbValidate - Successfully validated 5 migrations (execution time 00:00.071s)
+2025-11-15 23:19:43.525 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 005
+2025-11-15 23:19:43.538 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-11-15 23:19:43.737 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-15 23:19:43.875 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-15 23:19:43.958 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-15 23:19:44.482 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-15 23:19:44.587 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-15 23:19:45.986 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-15 23:19:46.641 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-15 23:19:48.541 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-15 23:19:49.144 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-15 23:19:50.129 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-11-15 23:19:50.144 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-11-15 23:19:50.168 [main] INFO  c.t.s.MsSolicitudesApplication - Started MsSolicitudesApplication in 12.359 seconds (process running for 13.718)
+2025-11-15 23:20:06.814 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-15 23:20:06.817 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-15 23:20:06.846 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

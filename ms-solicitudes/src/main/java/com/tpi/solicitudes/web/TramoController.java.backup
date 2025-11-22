@@ -1,0 +1,292 @@
+package com.tpi.solicitudes.web;
+
+import com.tpi.solicitudes.domain.Tramo;
+import com.tpi.solicitudes.service.TramoService;
+import com.tpi.solicitudes.web.dto.AsignarCamionRequest;
+import com.tpi.solicitudes.web.dto.FinalizarTramoRequest;
+import com.tpi.solicitudes.web.dto.TramoAsignacionDTO;
+import com.tpi.solicitudes.web.dto.TramoCreateDto;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Mono;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDateTime;
+
+@Slf4j
+@Tag(name = "Tramos", description = "Gestión de tramos (segmentos) de transporte")
+@RestController
+@RequestMapping("/api/tramos")
+public class TramoController {
+
+    private final TramoService service;
+
+    public TramoController(TramoService service) {
+        this.service = service;
+    }
+
+    @Operation(
+        summary = "Listar todos los tramos",
+        description = "Retorna una página con todos los tramos del sistema"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Lista de tramos obtenida"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @GetMapping
+    public Page<Tramo> listar(
+        @Parameter(description = "Información de paginación") Pageable pageable
+    ) {
+        log.info("Listando todos los tramos - página: {}, tamaño: {}", pageable.getPageNumber(), pageable.getPageSize());
+        Page<Tramo> result = service.findAll(pageable);
+        log.debug("Se encontraron {} tramos", result.getTotalElements());
+        return result;
+    }
+
+    @Operation(
+        summary = "Listar tramos por solicitud",
+        description = "Retorna los tramos asociados a una solicitud específica"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Lista de tramos obtenida"),
+        @ApiResponse(responseCode = "404", description = "Solicitud no encontrada"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @GetMapping("/solicitudes/{solicitudId}/tramos")
+    public Page<Tramo> listarPorSolicitud(
+        @Parameter(description = "ID de la solicitud", required = true) @PathVariable Long solicitudId,
+        @Parameter(description = "Información de paginación") Pageable pageable
+    ) {
+        return service.listarPorSolicitud(solicitudId, pageable);
+    }
+
+    @Operation(
+        summary = "Listar tramos por solicitud (API RESTful)",
+        description = "Endpoint RESTful alternativo para obtener tramos de una solicitud"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Lista de tramos obtenida"),
+        @ApiResponse(responseCode = "404", description = "Solicitud no encontrada"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @GetMapping("/api/solicitudes/{idSolicitud}/tramos")
+    public Page<Tramo> listarPorSolicitudApi(
+        @Parameter(description = "ID de la solicitud", required = true) @PathVariable Long idSolicitud,
+        @Parameter(description = "Información de paginación") Pageable pageable
+    ) {
+        return service.listarPorSolicitud(idSolicitud, pageable);
+    }
+
+    @Operation(
+        summary = "Crear nuevo tramo",
+        description = "Crea un nuevo tramo para una solicitud"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "201", description = "Tramo creado exitosamente"),
+        @ApiResponse(responseCode = "404", description = "Solicitud no encontrada"),
+        @ApiResponse(responseCode = "400", description = "Datos inválidos"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PostMapping("/solicitudes/{solicitudId}/tramos")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Tramo crear(
+        @Parameter(description = "ID de la solicitud", required = true) @PathVariable Long solicitudId,
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Datos del tramo", required = true)
+        @RequestBody @Valid Tramo t
+    ) {
+        return service.crear(solicitudId, t);
+    }
+
+    @Operation(
+        summary = "Obtener tramo por ID",
+        description = "Retorna un tramo específico según su ID"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Tramo encontrado"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @GetMapping("/{id}")
+    public Tramo obtener(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long id
+    ) {
+        return service.obtener(id);
+    }
+
+    @Operation(
+        summary = "Actualizar tramo",
+        description = "Actualiza un tramo existente"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Tramo actualizado correctamente"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "400", description = "Datos inválidos"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PutMapping("/tramos/{id}")
+    public Tramo actualizar(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long id,
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Datos actualizados del tramo", required = true)
+        @RequestBody @Valid Tramo t
+    ) {
+        return service.actualizar(id, t);
+    }
+
+    @Operation(
+        summary = "Eliminar tramo",
+        description = "Elimina un tramo por su ID"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "204", description = "Tramo eliminado correctamente"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @DeleteMapping("/tramos/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void eliminar(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long id
+    ) {
+        service.eliminar(id);
+    }
+
+    @Operation(
+        summary = "Crear nuevo tramo (API)",
+        description = "Crea un nuevo tramo usando DTO de solicitud"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "201", description = "Tramo creado exitosamente"),
+        @ApiResponse(responseCode = "404", description = "Solicitud no encontrada"),
+        @ApiResponse(responseCode = "400", description = "Datos inválidos"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PostMapping("/api/tramos")
+    public ResponseEntity<Tramo> crearDesdeDto(
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "DTO para crear tramo", required = true)
+        @RequestBody @Valid TramoCreateDto dto
+    ) {
+        Tramo t = Tramo.builder()
+                .origen(dto.origen())
+                .destino(dto.destino())
+                .dominioCamion(dto.dominioCamion())
+                .estado(dto.estado())
+                .fechaHoraInicioReal(dto.fechaHoraInicioReal())
+                .fechaHoraFinReal(dto.fechaHoraFinReal())
+                .costoReal(dto.costoReal())
+                .build();
+        Tramo creado = service.crear(dto.solicitudId(), t);
+        return ResponseEntity.status(HttpStatus.CREATED).body(creado);
+    }
+
+    @Operation(
+        summary = "Asignar camión a tramo (asignarACamion)",
+        description = "Asigna un camión a un tramo existente"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Camión asignado correctamente"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "400", description = "Camión no disponible"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PutMapping("/api/tramos/{idTramo}/asignarACamion")
+    public Mono<Tramo> asignarACamion(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long idTramo,
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Datos de asignación", required = true)
+        @RequestBody @Valid TramoAsignacionDTO body
+    ) {
+        return service.asignarACamion(idTramo, body.dominioCamion());
+    }
+
+    @Operation(
+        summary = "Asignar camión a tramo (RESTful)",
+        description = "Asigna un camión a un tramo existente. Solo OPERADOR puede asignar"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Camión asignado correctamente"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "400", description = "Camión no disponible"),
+        @ApiResponse(responseCode = "403", description = "Acceso denegado - rol requerido: OPERADOR"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PutMapping("/api/tramos/{idTramo}/asignar-camion")
+    @PreAuthorize("hasRole('OPERADOR')")
+    public Mono<Tramo> asignarCamion(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long idTramo,
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Datos de asignación", required = true)
+        @RequestBody @Valid AsignarCamionRequest request
+    ) {
+        return service.asignarACamion(idTramo, request.dominioCamion());
+    }
+
+    @Operation(
+        summary = "Iniciar tramo",
+        description = "Marca el inicio de un tramo. Solo TRANSPORTISTA puede iniciar"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Tramo iniciado correctamente"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "409", description = "Estado inválido para iniciar"),
+        @ApiResponse(responseCode = "403", description = "Acceso denegado - rol requerido: TRANSPORTISTA"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PutMapping("/api/tramos/{idTramo}/iniciar")
+    @PreAuthorize("hasRole('TRANSPORTISTA')")
+    public Tramo iniciar(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long idTramo
+    ) {
+        return service.iniciarTramo(idTramo);
+    }
+
+    @Operation(
+        summary = "Finalizar tramo",
+        description = "Marca el fin de un tramo y registra información de la entrega"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Tramo finalizado correctamente"),
+        @ApiResponse(responseCode = "404", description = "Tramo no encontrado"),
+        @ApiResponse(responseCode = "409", description = "Estado inválido para finalizar"),
+        @ApiResponse(responseCode = "400", description = "Datos inválidos"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @PutMapping("/api/tramos/{idTramo}/finalizar")
+    public Tramo finalizar(
+        @Parameter(description = "ID del tramo", required = true) @PathVariable Long idTramo,
+        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Datos de finalización", required = true)
+        @RequestBody @Valid FinalizarTramoRequest request
+    ) {
+        return service.finalizarTramo(idTramo, request.fechaHoraFin(), request.odometroFinal(), 
+                                       request.costoReal(), request.tiempoReal());
+    }
+
+    // Listado general paginado con filtros opcionales
+    @Operation(
+        summary = "Listar todos los tramos",
+        description = "Retorna una página de tramos con opciones de filtrado por estado, camión y rango de fechas"
+    )
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Lista de tramos obtenida"),
+        @ApiResponse(responseCode = "401", description = "No autorizado")
+    })
+    @GetMapping("/api/tramos")
+    public Page<Tramo> listar(
+        @Parameter(description = "Información de paginación") Pageable pageable,
+        @Parameter(description = "Filtro por estado del tramo") @RequestParam(required = false) String estado,
+        @Parameter(description = "Filtro por dominio de camión") @RequestParam(required = false) String dominioCamion,
+        @Parameter(description = "Fecha inicio del rango (ISO format)") @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) java.time.LocalDateTime desde,
+        @Parameter(description = "Fecha fin del rango (ISO format)") @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) java.time.LocalDateTime hasta
+    ) {
+        return service.listar(pageable, estado, dominioCamion, desde, hasta);
+    }
+}

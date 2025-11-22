@@ -1,0 +1,10 @@
+2025-11-10 21:49:34.808 [main] INFO  c.t.s.service.SolicitudService - Eliminando solicitud ID: 1
+2025-11-10 21:49:34.818 [main] INFO  c.t.s.service.SolicitudService - Solicitud eliminada exitosamente ID: 1
+2025-11-10 21:49:34.852 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-10 21:49:34.859 [main] INFO  c.t.s.service.SolicitudService - Actualizando solicitud ID: 1
+2025-11-10 21:49:34.859 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-10 21:49:34.863 [main] INFO  c.t.s.service.SolicitudService - Solicitud actualizada exitosamente ID: 1
+2025-11-10 21:49:34.870 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 999
+2025-11-10 21:49:34.870 [main] WARN  c.t.s.service.SolicitudService - Solicitud no encontrada: 999
+2025-11-10 21:49:34.893 [main] INFO  c.t.s.service.SolicitudService - Creando nueva solicitud para cliente: 1
+2025-11-10 21:49:34.897 [main] INFO  c.t.s.service.SolicitudService - Solicitud creada exitosamente con ID: null

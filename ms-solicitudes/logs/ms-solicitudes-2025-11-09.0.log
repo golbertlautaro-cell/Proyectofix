@@ -1,0 +1,83 @@
+2025-11-09 20:23:31.568 [main] INFO  c.t.s.service.SolicitudService - Eliminando solicitud ID: 1
+2025-11-09 20:23:31.575 [main] INFO  c.t.s.service.SolicitudService - Solicitud eliminada exitosamente ID: 1
+2025-11-09 20:23:31.584 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:23:31.597 [main] INFO  c.t.s.service.SolicitudService - Actualizando solicitud ID: 1
+2025-11-09 20:23:31.598 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:23:31.599 [main] INFO  c.t.s.service.SolicitudService - Solicitud actualizada exitosamente ID: 1
+2025-11-09 20:23:31.635 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 999
+2025-11-09 20:23:31.643 [main] WARN  c.t.s.service.SolicitudService - Solicitud no encontrada: 999
+2025-11-09 20:23:31.693 [main] INFO  c.t.s.service.SolicitudService - Creando nueva solicitud para cliente: 1
+2025-11-09 20:23:31.694 [main] INFO  c.t.s.service.SolicitudService - Solicitud creada exitosamente con ID: null
+2025-11-09 20:23:32.198 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tpi.solicitudes.web.ClienteControllerTest]: ClienteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-09 20:23:32.699 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tpi.solicitudes.MsSolicitudesApplication for test class com.tpi.solicitudes.web.ClienteControllerTest
+2025-11-09 20:23:33.985 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-09 20:23:34.094 [main] INFO  c.t.s.web.ClienteControllerTest - Starting ClienteControllerTest using Java 21.0.7 with PID 13552 (started by Usuario- in D:\Users\Usuario\Desktop\backend1\ms-solicitudes)
+2025-11-09 20:23:34.095 [main] DEBUG c.t.s.web.ClienteControllerTest - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-09 20:23:34.096 [main] INFO  c.t.s.web.ClienteControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-11-09 20:23:36.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-09 20:23:37.371 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 395 ms. Found 3 JPA repository interfaces.
+2025-11-09 20:23:39.018 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-09 20:23:39.268 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-09 20:23:39.400 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-09 20:23:39.793 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-09 20:23:39.869 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-09 20:23:40.271 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32068aef
+2025-11-09 20:23:40.273 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-09 20:23:40.333 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-09 20:23:42.487 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-09 20:23:42.822 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-09 20:23:45.177 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-09 20:23:45.980 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-09 20:23:46.950 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-11-09 20:23:46.951 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-11-09 20:23:46.954 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-11-09 20:23:47.599 [main] INFO  c.t.s.web.ClienteControllerTest - Started ClienteControllerTest in 14.422 seconds (process running for 20.342)
+2025-11-09 20:23:47.709 [main] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/clientes
+2025-11-09 20:23:47.723 [main] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-09 20:23:47.773 [main] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/clientes
+2025-11-09 20:23:47.773 [main] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-09 20:23:47.790 [main] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/clientes/1
+2025-11-09 20:23:47.791 [main] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-09 20:23:49.943 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-09 20:23:49.946 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-09 20:23:49.959 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-09 20:24:55.483 [main] INFO  c.t.s.service.SolicitudService - Eliminando solicitud ID: 1
+2025-11-09 20:24:55.490 [main] INFO  c.t.s.service.SolicitudService - Solicitud eliminada exitosamente ID: 1
+2025-11-09 20:24:55.499 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:24:55.507 [main] INFO  c.t.s.service.SolicitudService - Actualizando solicitud ID: 1
+2025-11-09 20:24:55.507 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:24:55.508 [main] INFO  c.t.s.service.SolicitudService - Solicitud actualizada exitosamente ID: 1
+2025-11-09 20:24:55.514 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 999
+2025-11-09 20:24:55.514 [main] WARN  c.t.s.service.SolicitudService - Solicitud no encontrada: 999
+2025-11-09 20:24:55.524 [main] INFO  c.t.s.service.SolicitudService - Creando nueva solicitud para cliente: 1
+2025-11-09 20:24:55.525 [main] INFO  c.t.s.service.SolicitudService - Solicitud creada exitosamente con ID: null
+2025-11-09 20:25:41.462 [main] INFO  c.t.s.service.SolicitudService - Eliminando solicitud ID: 1
+2025-11-09 20:25:41.466 [main] INFO  c.t.s.service.SolicitudService - Solicitud eliminada exitosamente ID: 1
+2025-11-09 20:25:41.479 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:25:41.490 [main] INFO  c.t.s.service.SolicitudService - Actualizando solicitud ID: 1
+2025-11-09 20:25:41.490 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:25:41.491 [main] INFO  c.t.s.service.SolicitudService - Solicitud actualizada exitosamente ID: 1
+2025-11-09 20:25:41.497 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 999
+2025-11-09 20:25:41.498 [main] WARN  c.t.s.service.SolicitudService - Solicitud no encontrada: 999
+2025-11-09 20:25:41.508 [main] INFO  c.t.s.service.SolicitudService - Creando nueva solicitud para cliente: 1
+2025-11-09 20:25:41.509 [main] INFO  c.t.s.service.SolicitudService - Solicitud creada exitosamente con ID: null
+2025-11-09 20:26:13.747 [main] INFO  c.t.s.service.SolicitudService - Eliminando solicitud ID: 1
+2025-11-09 20:26:13.753 [main] INFO  c.t.s.service.SolicitudService - Solicitud eliminada exitosamente ID: 1
+2025-11-09 20:26:13.762 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:26:13.774 [main] INFO  c.t.s.service.SolicitudService - Actualizando solicitud ID: 1
+2025-11-09 20:26:13.775 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:26:13.775 [main] INFO  c.t.s.service.SolicitudService - Solicitud actualizada exitosamente ID: 1
+2025-11-09 20:26:13.781 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 999
+2025-11-09 20:26:13.781 [main] WARN  c.t.s.service.SolicitudService - Solicitud no encontrada: 999
+2025-11-09 20:26:13.790 [main] INFO  c.t.s.service.SolicitudService - Creando nueva solicitud para cliente: 1
+2025-11-09 20:26:13.790 [main] INFO  c.t.s.service.SolicitudService - Solicitud creada exitosamente con ID: null
+2025-11-09 20:48:44.904 [main] INFO  c.t.s.service.SolicitudService - Eliminando solicitud ID: 1
+2025-11-09 20:48:44.908 [main] INFO  c.t.s.service.SolicitudService - Solicitud eliminada exitosamente ID: 1
+2025-11-09 20:48:44.917 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:48:44.924 [main] INFO  c.t.s.service.SolicitudService - Actualizando solicitud ID: 1
+2025-11-09 20:48:44.924 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 1
+2025-11-09 20:48:44.925 [main] INFO  c.t.s.service.SolicitudService - Solicitud actualizada exitosamente ID: 1
+2025-11-09 20:48:44.938 [main] DEBUG c.t.s.service.SolicitudService - Buscando solicitud por ID: 999
+2025-11-09 20:48:44.939 [main] WARN  c.t.s.service.SolicitudService - Solicitud no encontrada: 999
+2025-11-09 20:48:44.950 [main] INFO  c.t.s.service.SolicitudService - Creando nueva solicitud para cliente: 1
+2025-11-09 20:48:44.950 [main] INFO  c.t.s.service.SolicitudService - Solicitud creada exitosamente con ID: null
