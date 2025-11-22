@@ -1,0 +1,14 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-11-04T05:21:00.607Z  INFO 12448 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : Starting MsGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 12448 (D:\Users\Usuario\Desktop\backend1\ms-gateway\target\ms-gateway-0.0.1-SNAPSHOT.jar started by Usuario- in D:\Users\Usuario\Desktop\backend1\ms-gateway)
+2025-11-04T05:21:00.611Z  INFO 12448 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-04T05:21:03.345Z  INFO 12448 --- [ms-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-11-04T05:21:03.365Z  INFO 12448 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : Started MsGatewayApplication in 3.614 seconds (process running for 4.821)

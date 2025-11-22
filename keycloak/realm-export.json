@@ -1,0 +1,135 @@
+{
+  "realm": "tpi-realm",
+  "enabled": true,
+  "sslRequired": "none",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": true,
+  "editUsernameAllowed": false,
+  "bruteForceProtected": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "CLIENTE",
+        "description": "Rol para clientes que crean solicitudes"
+      },
+      {
+        "name": "OPERADOR",
+        "description": "Rol para operadores que asignan camiones"
+      },
+      {
+        "name": "TRANSPORTISTA",
+        "description": "Rol para transportistas que inician/finalizan tramos"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "tpi-backend",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "serviceAccountsEnabled": false,
+      "redirectUris": ["*"],
+      "webOrigins": ["*"],
+      "attributes": {
+        "access.token.lifespan": "1800"
+      }
+    },
+    {
+      "clientId": "account-console",
+      "name": "Account Console",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "serviceAccountsEnabled": false,
+      "redirectUris": ["http://localhost:8090/*"],
+      "webOrigins": ["http://localhost:8090"],
+      "attributes": {}
+    },
+    {
+      "clientId": "account",
+      "name": "Account",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "serviceAccountsEnabled": false,
+      "redirectUris": ["http://localhost:8090/*"],
+      "webOrigins": ["http://localhost:8090"],
+      "attributes": {}
+    }
+  ],
+  "users": [
+    {
+      "username": "cliente1",
+      "enabled": true,
+      "email": "cliente1@example.com",
+      "firstName": "Juan",
+      "lastName": "Pérez",
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["CLIENTE"]
+    },
+    {
+      "username": "operador1",
+      "enabled": true,
+      "email": "operador1@example.com",
+      "firstName": "María",
+      "lastName": "González",
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["OPERADOR"]
+    },
+    {
+      "username": "transportista1",
+      "enabled": true,
+      "email": "transportista1@example.com",
+      "firstName": "Carlos",
+      "lastName": "Rodríguez",
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["TRANSPORTISTA"]
+    },
+    {
+      "username": "admin-tpi",
+      "enabled": true,
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "TPI",
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["CLIENTE", "OPERADOR", "TRANSPORTISTA"]
+    }
+  ]
+}

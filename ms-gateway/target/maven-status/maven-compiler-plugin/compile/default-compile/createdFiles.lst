@@ -1,0 +1,3 @@
+com\tpi\gateway\MsGatewayApplication.class
+com\tpi\gateway\proxy\ProxyController.class
+com\tpi\gateway\config\SecurityConfig.class

@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ms-gateway
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/realms/tpi-realm
+  cloud:
+    # Disable Spring Cloud compatibility check when Spring Boot and Spring Cloud versions don't match exactly
+    compatibility-verifier:
+      enabled: false
+    gateway:
+      routes:
+        - id: solicitudes-route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/solicitudes/**, /api/tramos/**
+        - id: logistica-route
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/camiones/**, /api/depositos/**
+
+# Opcional: CORS para desarrollo
+  # webflux:
+  #   base-path: /
+
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: health,info
