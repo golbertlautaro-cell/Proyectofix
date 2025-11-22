@@ -1,0 +1,13 @@
+2025-11-10 22:06:35.291 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-10 22:06:35.701 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication using Java 21.0.7 with PID 1464 (D:\Users\Usuario\Desktop\backend1\ms-logistica\target\classes started by Usuario- in D:\Users\Usuario\Desktop\backend1\ms-logistica)
+2025-11-10 22:06:35.708 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-10 22:06:35.712 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 22:06:39.950 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-10 22:06:40.128 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 2 JPA repository interfaces.
+2025-11-10 22:06:41.758 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-10 22:06:42.024 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6221 ms
+2025-11-10 22:06:42.414 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-10 22:06:42.557 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-10 22:06:42.675 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-10 22:06:43.312 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-10 22:06:43.376 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...

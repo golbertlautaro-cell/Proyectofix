@@ -1,0 +1,370 @@
+2025-11-16 16:47:57.068 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 16:47:57.099 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication using Java 21.0.7 with PID 4688 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\classes started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 16:47:57.099 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 16:47:57.100 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 16:47:57.560 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 16:47:57.599 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2025-11-16 16:47:57.959 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 16:47:57.966 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:47:57.969 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 16:47:57.969 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 16:47:58.008 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 16:47:58.009 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 884 ms
+2025-11-16 16:47:58.105 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 16:47:58.138 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 16:47:58.163 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 16:47:58.347 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 16:47:58.365 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 16:47:58.474 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a48c398
+2025-11-16 16:47:58.476 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 16:47:59.029 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 16:47:59.084 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 16:47:59.454 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 16:47:59.622 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 16:47:59.812 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:47:59.819 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-16 16:47:59.824 [main] INFO  c.t.l.MsLogisticaApplication - Started MsLogisticaApplication in 2.984 seconds (process running for 3.314)
+2025-11-16 16:48:48.960 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 16:48:48.985 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication using Java 21.0.7 with PID 18348 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\classes started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 16:48:48.985 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 16:48:48.986 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 16:48:49.461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 16:48:49.500 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2025-11-16 16:48:49.848 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 16:48:49.854 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:48:49.857 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 16:48:49.857 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 16:48:49.896 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 16:48:49.897 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 880 ms
+2025-11-16 16:48:49.993 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 16:48:50.027 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 16:48:50.053 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 16:48:50.233 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 16:48:50.252 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 16:48:50.350 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2676d96a
+2025-11-16 16:48:50.352 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 16:48:50.921 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 16:48:50.963 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 16:48:51.335 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 16:48:51.541 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 16:48:51.748 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:48:51.751 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-16 16:48:51.752 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 16:48:51.754 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-16 16:48:51.756 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-16 16:48:51.765 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16 16:48:51.776 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-11-16 16:49:20.404 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 16:49:20.427 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication using Java 21.0.7 with PID 22532 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\classes started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 16:49:20.428 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 16:49:20.428 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 16:49:20.895 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 16:49:20.932 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2025-11-16 16:49:21.267 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 16:49:21.274 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:49:21.276 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 16:49:21.277 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 16:49:21.315 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 16:49:21.316 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 859 ms
+2025-11-16 16:49:21.414 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 16:49:21.449 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 16:49:21.471 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 16:49:21.655 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 16:49:21.675 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 16:49:21.772 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12266084
+2025-11-16 16:49:21.773 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 16:49:22.333 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 16:49:22.376 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 16:49:22.743 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 16:49:22.911 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 16:49:23.086 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:49:23.088 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-16 16:49:23.089 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 16:49:23.090 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-16 16:49:23.092 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-16 16:49:23.100 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16 16:49:23.111 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-11-16 16:50:51.640 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 16:50:51.671 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication using Java 21.0.7 with PID 1160 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\classes started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 16:50:51.671 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 16:50:51.672 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 16:50:52.260 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 16:50:52.303 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2025-11-16 16:50:52.713 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 16:50:52.722 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:50:52.725 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 16:50:52.725 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 16:50:52.771 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 16:50:52.771 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1067 ms
+2025-11-16 16:50:52.893 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 16:50:52.935 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 16:50:52.961 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 16:50:53.197 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 16:50:53.221 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 16:50:53.346 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d459bda
+2025-11-16 16:50:53.348 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 16:50:54.051 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 16:50:54.097 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 16:50:54.542 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 16:50:54.748 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 16:50:54.964 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 16:50:54.972 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-16 16:50:54.978 [main] INFO  c.t.l.MsLogisticaApplication - Started MsLogisticaApplication in 3.598 seconds (process running for 3.982)
+2025-11-16 16:50:55.078 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-16 16:50:55.078 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-16 16:50:55.080 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-16 16:50:55.089 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:50:55.094 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:50:55.094 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:01.169 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:01.170 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:01.170 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:07.183 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:07.183 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:07.183 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:13.192 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:13.194 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:13.194 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:19.207 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:19.207 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:19.207 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:25.219 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:25.219 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:25.219 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:31.231 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:31.231 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:31.231 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:37.246 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:37.246 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:37.246 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:43.259 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:43.259 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:43.259 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:49.269 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:49.269 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:49.269 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:51:55.279 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:51:55.279 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:51:55.279 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:01.289 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:01.289 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:01.289 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:07.302 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:07.302 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:07.302 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:13.314 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:13.314 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:13.314 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:19.326 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:19.326 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:19.326 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:25.339 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:25.339 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:25.339 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:31.350 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:31.350 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:31.350 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:37.361 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:37.361 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:37.363 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:43.375 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:43.375 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:43.376 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:49.387 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:49.387 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:49.387 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:52:55.397 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:52:55.397 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:52:55.398 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:01.409 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:01.409 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:01.409 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:07.421 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:07.421 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:07.421 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:13.434 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:13.434 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:13.434 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:19.445 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:19.445 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:19.445 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:25.454 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:25.454 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:25.454 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:31.464 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:31.464 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:31.464 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:37.477 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:37.477 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:37.477 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:43.488 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:43.488 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:43.488 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 16:53:49.499 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-16 16:53:49.499 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-16 16:53:49.499 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-16 20:36:29.138 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 20:36:29.210 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 17048 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\ms-logistica-0.0.1-SNAPSHOT.jar started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 20:36:29.211 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 20:36:29.212 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 20:36:30.198 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 20:36:30.246 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2025-11-16 20:36:31.158 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 20:36:31.177 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 20:36:31.182 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 20:36:31.182 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 20:36:31.240 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 20:36:31.241 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1971 ms
+2025-11-16 20:36:31.547 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 20:36:31.639 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 20:36:31.677 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 20:36:31.966 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 20:36:31.994 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 20:36:32.177 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d17906
+2025-11-16 20:36:32.179 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 20:36:32.942 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 20:36:32.990 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 20:36:33.646 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 20:36:34.007 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 20:36:34.429 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 20:36:34.432 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-16 20:36:34.435 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 20:36:34.438 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-16 20:36:34.442 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-16 20:36:34.457 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16 20:36:34.471 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-11-16 20:38:17.855 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 20:38:17.922 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 28152 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\ms-logistica-0.0.1-SNAPSHOT.jar started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 20:38:17.923 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 20:38:17.923 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 20:38:18.891 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 20:38:18.934 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2025-11-16 20:38:19.750 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 20:38:19.765 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 20:38:19.778 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 20:38:19.778 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 20:38:19.819 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 20:38:19.819 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1846 ms
+2025-11-16 20:38:20.107 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 20:38:20.195 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 20:38:20.240 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 20:38:20.498 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 20:38:20.518 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 20:38:20.688 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d68954d
+2025-11-16 20:38:20.690 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 20:38:21.792 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 20:38:21.847 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 20:38:22.751 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 20:38:23.139 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 20:38:23.472 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 20:38:23.480 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-16 20:38:23.483 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 20:38:23.486 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-16 20:38:23.490 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-16 20:38:23.515 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16 20:38:23.532 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-11-16 20:40:26.538 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-16 20:40:26.590 [main] INFO  c.t.l.MsLogisticaApplication - Starting MsLogisticaApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 24784 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\ms-logistica-0.0.1-SNAPSHOT.jar started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
+2025-11-16 20:40:26.591 [main] DEBUG c.t.l.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-11-16 20:40:26.592 [main] INFO  c.t.l.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-16 20:40:27.528 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-16 20:40:27.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2025-11-16 20:40:28.339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-16 20:40:28.360 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-16 20:40:28.366 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-16 20:40:28.367 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-11-16 20:40:28.423 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-16 20:40:28.423 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms
+2025-11-16 20:40:28.678 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-16 20:40:28.770 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-16 20:40:28.831 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-16 20:40:29.071 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-16 20:40:29.092 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-16 20:40:29.267 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35f760a4
+2025-11-16 20:40:29.268 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-16 20:40:30.164 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-16 20:40:30.218 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 20:40:30.883 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-11-16 20:40:31.312 [main] DEBUG o.s.s.w.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-16 20:40:31.768 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-16 20:40:31.784 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-16 20:40:31.788 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-16 20:40:31.794 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-16 20:40:31.804 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-16 20:40:31.821 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-16 20:40:31.844 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
