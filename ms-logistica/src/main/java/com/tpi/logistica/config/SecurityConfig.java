@@ -20,6 +20,9 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .headers(headers -> headers.disable())
+            .httpBasic(basic -> basic.disable())
+            .formLogin(form -> form.disable())
             .authorizeHttpRequests(auth -> auth
                 // TODOS los endpoints permitidos sin autenticación (MODO TESTING)
                 .anyRequest().permitAll()

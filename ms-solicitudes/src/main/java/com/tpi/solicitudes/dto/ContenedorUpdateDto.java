@@ -24,4 +24,13 @@ public class ContenedorUpdateDto {
 
     @Schema(description = "Estado del contenedor", example = "DISPONIBLE")
     private String estado;
+
+    @Schema(description = "Peso real actual del contenedor en kilogramos", example = "1200.5")
+    private Double pesoReal;
+
+    @Schema(description = "Volumen real actual del contenedor en metros cúbicos", example = "12.3")
+    private Double volumenReal;
+
+    @Schema(description = "ID del depósito actual donde se encuentra el contenedor", example = "5")
+    private Long depositoActualId;
 }

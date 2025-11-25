@@ -22,6 +22,7 @@ com\tpi\logistica\service\CamionService.class
 com\tpi\logistica\service\GoogleMapsService.class
 com\tpi\logistica\dto\GoogleDistanceResponse.class
 com\tpi\logistica\domain\Camion$CamionBuilder.class
+com\tpi\logistica\config\GoogleMapsProperties.class
 com\tpi\logistica\dto\GoogleDistanceValue.class
 com\tpi\logistica\web\error\GlobalExceptionHandler.class
 com\tpi\logistica\domain\Camion.class

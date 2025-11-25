@@ -52,9 +52,6 @@ public class TramoResponseDto {
     @Schema(description = "Tiempo real en horas", example = "2.5")
     private Double tiempoReal;
 
-    @Schema(description = "Tipo de tramo", example = "NORMAL")
-    private String tipo;
-
     @Schema(description = "Costo aproximado del tramo", example = "480.00")
     private Double costoAproximado;
 
@@ -72,12 +69,26 @@ public class TramoResponseDto {
     @Schema(description = "Distancia real recorrida en kilómetros", example = "342.7")
     private Double distanciaRealKm;
 
-    @Schema(description = "Días estimados de estadía en depósito", example = "1.2")
-    private Double diasDepositoEstimados;
+    // Nuevos: referencias y direcciones libres para origen/destino
+    @Schema(description = "ID de depósito de origen (si aplica)", example = "4")
+    private Long origenDepositoId;
 
-    @Schema(description = "Días reales de estadía en depósito", example = "1.0")
-    private Double diasDepositoReales;
+    @Schema(description = "ID de depósito de destino (si aplica)", example = "6")
+    private Long destinoDepositoId;
 
-    @Schema(description = "Identificador del depósito asociado", example = "4")
-    private Long depositoId;
+    @Schema(description = "Dirección libre de origen (si aplica)", example = "Calle 1 123")
+    private String origenDireccionLibre;
+
+    @Schema(description = "Dirección libre de destino (si aplica)", example = "Calle 2 456")
+    private String destinoDireccionLibre;
+
+    // Nuevos campos: estadía
+    @Schema(description = "Tiempo de estadía en horas", example = "24.0")
+    private Double tiempoEstadiaHoras;
+
+    @Schema(description = "Costo real de estadía", example = "150.0")
+    private Double costoEstadiaReal;
+
+    @Schema(description = "Orden del tramo en la ruta", example = "1")
+    private Integer orden;
 }

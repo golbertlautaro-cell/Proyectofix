@@ -43,7 +43,23 @@ public class Contenedor {
     @Schema(description = "Capacidad máxima en kilogramos", example = "25000")
     private Double capacidadKg;
 
+    // Estado del contenedor. Valores posibles: EN_ORIGEN, EN_TRANSITO, EN_DEPOSITO, ENTREGADO, DISPONIBLE
     @Column(name = "estado", length = 30)
-    @Schema(description = "Estado del contenedor", example = "DISPONIBLE")
+    @Schema(description = "Estado del contenedor. Valores: EN_ORIGEN, EN_TRANSITO, EN_DEPOSITO, ENTREGADO, DISPONIBLE", example = "DISPONIBLE")
     private String estado;
+
+    // Nuevo: peso real actual del contenedor (kg)
+    @Column(name = "peso_real")
+    @Schema(description = "Peso real actual del contenedor en kilogramos", example = "1200.5")
+    private Double pesoReal;
+
+    // Nuevo: volumen real actual del contenedor (m3)
+    @Column(name = "volumen_real")
+    @Schema(description = "Volumen real actual del contenedor en metros cúbicos", example = "12.3")
+    private Double volumenReal;
+
+    // Nuevo: referencia al depósito actual donde se encuentra el contenedor (si aplica)
+    @Column(name = "deposito_actual_id")
+    @Schema(description = "ID del depósito actual donde se encuentra el contenedor", example = "5")
+    private Long depositoActualId;
 }

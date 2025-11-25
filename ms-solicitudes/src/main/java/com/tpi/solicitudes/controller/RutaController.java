@@ -195,15 +195,18 @@ public class RutaController {
             .odometroFinal(tramo.getOdometroFinal())
             .costoReal(tramo.getCostoReal())
             .tiempoReal(tramo.getTiempoReal())
-            .tipo(tramo.getTipo())
             .costoAproximado(tramo.getCostoAproximado())
             .fechaHoraInicioEstimada(tramo.getFechaHoraInicioEstimada())
             .fechaHoraFinEstimada(tramo.getFechaHoraFinEstimada())
             .distanciaEstimadaKm(tramo.getDistanciaEstimadaKm())
             .distanciaRealKm(tramo.getDistanciaRealKm())
-            .diasDepositoEstimados(tramo.getDiasDepositoEstimados())
-            .diasDepositoReales(tramo.getDiasDepositoReales())
-            .depositoId(tramo.getDepositoId())
+            .origenDepositoId(tramo.getOrigenDepositoId())
+            .destinoDepositoId(tramo.getDestinoDepositoId())
+            .origenDireccionLibre(tramo.getOrigenDireccionLibre())
+            .destinoDireccionLibre(tramo.getDestinoDireccionLibre())
+            .tiempoEstadiaHoras(tramo.getTiempoEstadiaHoras())
+            .costoEstadiaReal(tramo.getCostoEstadiaReal())
+            .orden(tramo.getOrden())
             .build();
     }
 }

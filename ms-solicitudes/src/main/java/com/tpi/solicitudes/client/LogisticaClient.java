@@ -77,4 +77,19 @@ public class LogisticaClient {
                 .retrieve()
                 .bodyToMono(new org.springframework.core.ParameterizedTypeReference<Map<String, Object>>() {});
     }
+
+    /**
+     * Obtiene todos los camiones disponibles en ms-logistica.
+     *
+     * @return Mono con lista de camiones (cada camión es un Map con sus propiedades)
+     */
+    public Mono<java.util.List<Map<String, Object>>> obtenerTodosLosCamiones() {
+        if (webClient.isEmpty()) {
+            return Mono.just(java.util.List.of());
+        }
+        return webClient.get().get()
+                .uri("/api/camiones")
+                .retrieve()
+                .bodyToMono(new org.springframework.core.ParameterizedTypeReference<java.util.List<Map<String, Object>>>() {});
+    }
 }

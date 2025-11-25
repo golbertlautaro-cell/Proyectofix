@@ -38,6 +38,27 @@ public class TramoCreateDto {
     @Schema(description = "Días estimados de estadía en depósito", example = "1.5")
     private Double diasEstimadosDeposito;
 
-    @Schema(description = "Identificador del depósito asociado al tramo", example = "3")
-    private Long depositoId;
+    // Reemplazo de depositoId: referencias a depósitos de origen/destino (opcionales)
+    @Schema(description = "ID de depósito de origen (opcional si se usa direccion libre)", example = "3")
+    private Long origenDepositoId;
+
+    @Schema(description = "ID de depósito de destino (opcional si se usa direccion libre)", example = "5")
+    private Long destinoDepositoId;
+
+    // Direcciones libres (si no se usan depósitos)
+    @Schema(description = "Dirección libre de origen (opcional)", example = "Calle Falsa 123")
+    private String origenDireccionLibre;
+
+    @Schema(description = "Dirección libre de destino (opcional)", example = "Avenida Siempreviva 742")
+    private String destinoDireccionLibre;
+
+    // Nuevos campos para estadía y costo real de estadía (opcionales al crear)
+    @Schema(description = "Tiempo de estadía en horas (opcional)", example = "24.0")
+    private Double tiempoEstadiaHoras;
+
+    @Schema(description = "Costo real de estadía (opcional)", example = "150.0")
+    private Double costoEstadiaReal;
+
+    @Schema(description = "Orden del tramo en la ruta", example = "1")
+    private Integer orden;
 }

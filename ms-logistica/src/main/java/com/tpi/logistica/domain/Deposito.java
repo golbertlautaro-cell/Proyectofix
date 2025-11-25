@@ -35,6 +35,9 @@ public class Deposito {
     @Column(name = "costo_estadia_diario", nullable = false)
     private Double costoEstadiaDiario;
 
+    @Column(name = "tarifa_estadia_por_hora")
+    private Double tarifaEstadiaPorHora;
+
     @Column(name = "direccion", length = 200)
     private String direccion;
 }

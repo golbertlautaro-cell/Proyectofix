@@ -40,12 +40,14 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- OAuth2 Resource Server -->
+        <!-- OAuth2 Resource Server - COMENTADO para evitar alto CPU -->
+        <!--
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
         </dependency>
-        
+        -->
+
         <!-- Lombok (single declaration) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -80,6 +82,26 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
+        <!-- Flyway DB migrations -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>10.21.0</version>
+        </dependency>
+
+        <!-- Flyway PostgreSQL support -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
+            <version>10.21.0</version>
+        </dependency>
+
+        <!-- Actuator para health checks y monitoreo -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <!-- Tests (opcional, sin ejecutar por defecto) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -95,5 +117,12 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
     </build>
 </project>

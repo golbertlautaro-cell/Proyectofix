@@ -47,9 +47,25 @@ public class Solicitud {
     @Schema(description = "Costo final del transporte", example = "1550.00")
     private Double costoFinal;
 
+    @Column(name = "costo_total_estimado")
+    @Schema(description = "Costo total estimado (todas las rutas/tramos)", example = "2000.00")
+    private Double costoTotalEstimado;
+
+    @Column(name = "costo_total_real")
+    @Schema(description = "Costo total real (todas las rutas/tramos)", example = "2100.00")
+    private Double costoTotalReal;
+
     @Column(name = "tiempo_real")
     @Schema(description = "Tiempo real de transporte en horas", example = "2.5")
     private Double tiempoReal;
+
+    @Column(name = "tiempo_total_estimado_horas")
+    @Schema(description = "Tiempo total estimado en horas", example = "24.0")
+    private Double tiempoTotalEstimadoHoras;
+
+    @Column(name = "tiempo_total_real_horas")
+    @Schema(description = "Tiempo total real en horas", example = "25.5")
+    private Double tiempoTotalRealHoras;
 
     @Column(name = "fecha_creacion")
     @Schema(description = "Fecha de creación de la solicitud")

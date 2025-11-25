@@ -8,23 +8,7 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2025-11-16T20:40:35.503Z  INFO 27420 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : Starting MsGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 27420 (C:\Users\juanc\Desktop\backend1\ms-gateway\target\ms-gateway-0.0.1-SNAPSHOT.jar started by juanc in C:\Users\juanc\Desktop\backend1\ms-gateway)
-2025-11-16T20:40:35.507Z  INFO 27420 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-11-16T20:40:39.135Z  WARN 27420 --- [ms-gateway] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-11-16T20:40:39.141Z  INFO 27420 --- [ms-gateway] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-11-16T20:40:39.155Z ERROR 27420 --- [ms-gateway] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
+2025-11-22T20:33:40.942Z  INFO 10592 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : Starting MsGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 10592 (C:\Users\Usuario-\IdeaProjects\Proyectofix\ms-gateway\target\ms-gateway-0.0.1-SNAPSHOT.jar started by Usuario- in C:\Users\Usuario-\IdeaProjects\Proyectofix\ms-gateway)
+2025-11-22T20:33:40.948Z  INFO 10592 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-22T20:33:43.128Z  INFO 10592 --- [ms-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-11-22T20:33:43.146Z  INFO 10592 --- [ms-gateway] [           main] com.tpi.gateway.MsGatewayApplication     : Started MsGatewayApplication in 2.878 seconds (process running for 3.571)

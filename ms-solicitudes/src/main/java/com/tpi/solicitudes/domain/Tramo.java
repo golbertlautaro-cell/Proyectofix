@@ -29,13 +29,26 @@ public class Tramo {
     @JsonIgnore
     private Ruta ruta;
 
-    @NotBlank
-    @Column(nullable = false, length = 100)
+    // Origen y destino: ahora pueden ser depósito (referencia) o dirección libre
+    @Column(name = "origen", length = 100)
     private String origen;
 
-    @NotBlank
-    @Column(nullable = false, length = 100)
+    @Column(name = "destino", length = 100)
     private String destino;
+
+    // Referencias a depósitos (opcional)
+    @Column(name = "origen_deposito_id")
+    private Long origenDepositoId;
+
+    @Column(name = "destino_deposito_id")
+    private Long destinoDepositoId;
+
+    // Direcciones libres (si no se usa depósito)
+    @Column(name = "origen_direccion_libre", length = 200)
+    private String origenDireccionLibre;
+
+    @Column(name = "destino_direccion_libre", length = 200)
+    private String destinoDireccionLibre;
 
     @Pattern(regexp = "^([A-Z]{3}[0-9]{3}|[A-Z]{2}[0-9]{3}[A-Z]{2})$", message = "Formato de dominio inválido")
     @Column(name = "dominio_camion", length = 20)
@@ -63,9 +76,6 @@ public class Tramo {
     @Column(name = "tiempo_real")
     private Double tiempoReal;
 
-    @Column(name = "tipo", length = 50)
-    private String tipo;
-
     @Column(name = "costo_aproximado")
     private Double costoAproximado;
 
@@ -81,12 +91,16 @@ public class Tramo {
     @Column(name = "distancia_real_km")
     private Double distanciaRealKm;
 
-    @Column(name = "dias_deposito_estimados")
-    private Double diasDepositoEstimados;
+    // Nuevos campos para estadía y costo real de estadía
+    @Column(name = "tiempo_estadia_horas")
+    private Double tiempoEstadiaHoras;
 
-    @Column(name = "dias_deposito_reales")
-    private Double diasDepositoReales;
+    @Column(name = "costo_estadia_real")
+    private Double costoEstadiaReal;
 
-    @Column(name = "deposito_id")
-    private Long depositoId;
+    // Orden del tramo en la ruta (obligatorio)
+    @Column(name = "orden", nullable = false)
+    private Integer orden;
+
+    // El campo depositoId fue reemplazado por origen/destino deposito refs
 }

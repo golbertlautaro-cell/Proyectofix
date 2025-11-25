@@ -1,28 +1,42 @@
-server:
-  port: 8081
-
 spring:
+  application:
+    name: ms-logistica
+  server:
+    port: 8081
   datasource:
-    url: jdbc:postgresql://localhost:5432/logistica_db
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/logistica_db
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
-    open-in-view: false
-  jackson:
-    serialization:
-      write-dates-as-timestamps: false
+    show-sql: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/realms/tpi-realm
 
-logging:
-  level:
-    org.hibernate.SQL: warn
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+  health:
+    db:
+      enabled: true
+  security:
+    enabled: false
 
 google:
   maps:
-    api-key: AIzaSyD9qO1p4z_S_O3cAR7c5fqbv79t4-d2BOs
     base-url: https://maps.googleapis.com/maps/api
+    api-key: AIzaSyDZkmSr76Ieg9G8kre-bwaGhB7bCO4zm_8
+

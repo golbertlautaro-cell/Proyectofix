@@ -1,35 +1,50 @@
-server:
-  port: 8080
-
 spring:
   application:
     name: ms-solicitudes
   datasource:
-    url: jdbc:postgresql://localhost:5432/solicitudes_db
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/solicitudes_db
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
-    open-in-view: false
+      ddl-auto: none
+    show-sql: false
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+    schemas: public
+  # Deshabilitar OAuth2 que puede causar alto CPU
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration
 
-services:
-  logistica:
-    url: http://localhost:8081
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+  health:
+    db:
+      enabled: true
+  security:
+    enabled: false
+
+ms-logistica:
+  url: http://ms-logistica:8081
+
+estimacion:
+  velocidad-promedio-kmh: 60
 
 google:
   maps:
-    api-key: PEGA_TU_API_KEY_AQUI
-    base-url: https://maps.googleapis.com/maps/api
+    base-url: https://maps.googleapis.com/maps/api/directions/json
+    api-key: AIzaSyDZkmSr76Ieg9G8kre-bwaGhB7bCO4zm_8
 
-pricing:
-  tarifa-base-promedio: 52.5
-  consumo-promedio-general: 30.0
-  precio-litro-combustible: 1.8
-  costo-diario-deposito: 180.0
-  dias-deposito-estimado-default: 0.5

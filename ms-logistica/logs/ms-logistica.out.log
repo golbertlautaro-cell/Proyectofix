@@ -1,107 +1,107 @@
-20:40:25,785 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.11
-20:40:25,788 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Here is a list of configurators discovered as a service, by rank: 
-20:40:25,788 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
-20:40:25,788 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
-20:40:25,788 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
-20:40:25,796 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
-20:40:25,796 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
-20:40:25,798 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
-20:40:25,799 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
-20:40:25,800 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
-20:40:25,800 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
-20:40:25,800 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
-20:40:25,802 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
-20:40:25,803 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-20:40:25,804 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:nested:/C:/Users/juanc/Desktop/backend1/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml]
-20:40:25,817 |-INFO in ConfigurationWatchList(mainURL=jar:nested:/C:/Users/juanc/Desktop/backend1/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml, fileWatchList={}, urlWatchList=[}) - URL [jar:nested:/C:/Users/juanc/Desktop/backend1/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
-20:40:25,939 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "C:\Users\juanc\AppData\Local\Temp\/spring.log" substituted for "${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"
-20:40:25,947 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
-20:40:25,947 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
-20:40:25,948 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
-20:40:25,948 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-20:40:25,984 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
-20:40:25,984 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
-20:40:25,984 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
-20:40:25,985 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
-20:40:25,985 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-20:40:25,988 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "./logs/ms-logistica.log" substituted for "${LOG_DIR}/ms-logistica.log"
-20:40:25,989 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-20:40:25,992 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log" substituted for "${LOG_DIR}/ms-logistica-%d{yyyy-MM-dd}.%i.log"
-20:40:25,993 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "10MB" substituted for "${LOG_FILE_MAX_SIZE}"
-20:40:25,994 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "30" substituted for "${LOG_FILE_MAX_HISTORY}"
-20:40:25,999 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - setting totalSizeCap to 1 GB
-20:40:26,001 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - Archive files will be limited to [10 MB] each.
-20:40:26,002 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - No compression will be used
-20:40:26,004 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - Will use the pattern ./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log for the active file
-20:40:26,026 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@6ff29830 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/ms-logistica-%d{yyyy-MM-dd}.%i.log'.
-20:40:26,026 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@6ff29830 - Roll-over at midnight.
-20:40:26,045 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@6ff29830 - Setting initial period to 2025-11-16T20:38:23.533Z
-20:40:26,058 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: ./logs/ms-logistica.log
-20:40:26,058 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [./logs/ms-logistica.log]
-20:40:26,060 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_FILE]
-20:40:26,060 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
-20:40:26,067 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC_FILE]
-20:40:26,067 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Attaching appender named [FILE] to AsyncAppender.
-20:40:26,068 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Setting discardingThreshold to 0
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.tpi.logistica] to DEBUG
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.web] to INFO
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to DEBUG
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate] to INFO
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.postgresql] to INFO
-20:40:26,070 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
-20:40:26,070 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
-20:40:26,070 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ROOT]
-20:40:26,070 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@6a2b953e - End of configuration.
-20:40:26,071 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@313b2ea6 - Registering current configuration as safe fallback point
-20:40:26,071 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 269 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+20:33:04,579 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.11
+20:33:04,583 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Here is a list of configurators discovered as a service, by rank: 
+20:33:04,583 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+20:33:04,583 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+20:33:04,583 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+20:33:04,592 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+20:33:04,592 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+20:33:04,594 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+20:33:04,596 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+20:33:04,597 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+20:33:04,597 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+20:33:04,597 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+20:33:04,598 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+20:33:04,599 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+20:33:04,600 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:nested:/C:/Users/Usuario-/IdeaProjects/Proyectofix/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml]
+20:33:04,611 |-INFO in ConfigurationWatchList(mainURL=jar:nested:/C:/Users/Usuario-/IdeaProjects/Proyectofix/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml, fileWatchList={}, urlWatchList=[}) - URL [jar:nested:/C:/Users/Usuario-/IdeaProjects/Proyectofix/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+20:33:04,812 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "C:\Users\Usuario-\AppData\Local\Temp\/spring.log" substituted for "${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"
+20:33:04,822 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+20:33:04,822 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [springProfile] in [ch.qos.logback.classic.LoggerContext]
+20:33:04,824 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+20:33:04,824 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+20:33:04,873 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+20:33:04,873 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+20:33:04,873 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+20:33:04,874 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+20:33:04,874 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+20:33:04,878 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "./logs/ms-logistica.log" substituted for "${LOG_DIR}/ms-logistica.log"
+20:33:04,879 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+20:33:04,885 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log" substituted for "${LOG_DIR}/ms-logistica-%d{yyyy-MM-dd}.%i.log"
+20:33:04,885 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "10MB" substituted for "${LOG_FILE_MAX_SIZE}"
+20:33:04,887 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@68267da0 - value "30" substituted for "${LOG_FILE_MAX_HISTORY}"
+20:33:04,893 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - setting totalSizeCap to 1 GB
+20:33:04,896 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - Archive files will be limited to [10 MB] each.
+20:33:04,899 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - No compression will be used
+20:33:04,901 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@40075281 - Will use the pattern ./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log for the active file
+20:33:04,932 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@6ff29830 - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/ms-logistica-%d{yyyy-MM-dd}.%i.log'.
+20:33:04,932 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@6ff29830 - Roll-over at midnight.
+20:33:04,952 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@6ff29830 - Setting initial period to 2025-11-22T20:28:22.428Z
+20:33:04,959 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: ./logs/ms-logistica.log
+20:33:04,959 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [./logs/ms-logistica.log]
+20:33:04,961 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_FILE]
+20:33:04,961 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+20:33:04,964 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC_FILE]
+20:33:04,964 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Attaching appender named [FILE] to AsyncAppender.
+20:33:04,965 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Setting discardingThreshold to 0
+20:33:04,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.tpi.logistica] to DEBUG
+20:33:04,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.web] to INFO
+20:33:04,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to DEBUG
+20:33:04,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate] to INFO
+20:33:04,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+20:33:04,966 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.postgresql] to INFO
+20:33:04,967 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+20:33:04,967 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+20:33:04,967 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ROOT]
+20:33:04,967 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@6a2b953e - End of configuration.
+20:33:04,968 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@313b2ea6 - Registering current configuration as safe fallback point
+20:33:04,968 |-INFO in ch.qos.logback.classic.util.ContextInitializer@424e1977 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 370 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
 
-20:40:26,462 |-INFO in ConfigurationWatchList(mainURL=jar:nested:/C:/Users/juanc/Desktop/backend1/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml, fileWatchList={}, urlWatchList=[}) - URL [jar:nested:/C:/Users/juanc/Desktop/backend1/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
-20:40:26,471 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "C:\Users\juanc\AppData\Local\Temp\/spring.log" substituted for "${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"
-20:40:26,475 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
-20:40:26,475 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-20:40:26,476 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
-20:40:26,476 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
-20:40:26,476 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
-20:40:26,476 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
-20:40:26,476 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-20:40:26,476 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "./logs/ms-logistica.log" substituted for "${LOG_DIR}/ms-logistica.log"
-20:40:26,476 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-20:40:26,478 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log" substituted for "${LOG_DIR}/ms-logistica-%d{yyyy-MM-dd}.%i.log"
-20:40:26,478 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "10MB" substituted for "${LOG_FILE_MAX_SIZE}"
-20:40:26,478 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "30" substituted for "${LOG_FILE_MAX_HISTORY}"
-20:40:26,478 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - setting totalSizeCap to 1 GB
-20:40:26,478 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - Archive files will be limited to [10 MB] each.
-20:40:26,478 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - No compression will be used
-20:40:26,479 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - Will use the pattern ./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log for the active file
-20:40:26,479 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@435871cb - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/ms-logistica-%d{yyyy-MM-dd}.%i.log'.
-20:40:26,479 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@435871cb - Roll-over at midnight.
-20:40:26,479 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@435871cb - Setting initial period to 2025-11-16T20:38:23.533Z
-20:40:26,480 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: ./logs/ms-logistica.log
-20:40:26,480 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [./logs/ms-logistica.log]
-20:40:26,480 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_FILE]
-20:40:26,480 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
-20:40:26,480 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC_FILE]
-20:40:26,480 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Attaching appender named [FILE] to AsyncAppender.
-20:40:26,480 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Setting discardingThreshold to 0
-20:40:26,480 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.tpi.logistica] to DEBUG
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating DEBUG level on Logger[com.tpi.logistica] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.web] to INFO
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.springframework.web] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to DEBUG
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating DEBUG level on Logger[org.springframework.security] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate] to INFO
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.springframework.boot.actuate] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.postgresql] to INFO
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.postgresql] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
-20:40:26,481 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[ROOT] onto the JUL framework
-20:40:26,481 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
-20:40:26,481 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ROOT]
-20:40:26,481 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79da1ec0 - End of configuration.
-20:40:26,481 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@19fb8826 - Registering current configuration as safe fallback point
+20:33:05,616 |-INFO in ConfigurationWatchList(mainURL=jar:nested:/C:/Users/Usuario-/IdeaProjects/Proyectofix/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml, fileWatchList={}, urlWatchList=[}) - URL [jar:nested:/C:/Users/Usuario-/IdeaProjects/Proyectofix/ms-logistica/target/ms-logistica-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+20:33:05,626 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "C:\Users\Usuario-\AppData\Local\Temp\/spring.log" substituted for "${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"
+20:33:05,630 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+20:33:05,630 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+20:33:05,631 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+20:33:05,631 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+20:33:05,631 |-WARN in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+20:33:05,631 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+20:33:05,631 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+20:33:05,632 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "./logs/ms-logistica.log" substituted for "${LOG_DIR}/ms-logistica.log"
+20:33:05,632 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+20:33:05,633 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log" substituted for "${LOG_DIR}/ms-logistica-%d{yyyy-MM-dd}.%i.log"
+20:33:05,633 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "10MB" substituted for "${LOG_FILE_MAX_SIZE}"
+20:33:05,633 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@75ed9710 - value "30" substituted for "${LOG_FILE_MAX_HISTORY}"
+20:33:05,633 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - setting totalSizeCap to 1 GB
+20:33:05,633 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - Archive files will be limited to [10 MB] each.
+20:33:05,633 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - No compression will be used
+20:33:05,633 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1338368149 - Will use the pattern ./logs/ms-logistica-%d{yyyy-MM-dd}.%i.log for the active file
+20:33:05,634 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@435871cb - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/ms-logistica-%d{yyyy-MM-dd}.%i.log'.
+20:33:05,634 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@435871cb - Roll-over at midnight.
+20:33:05,635 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@435871cb - Setting initial period to 2025-11-22T20:28:22.428Z
+20:33:05,635 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: ./logs/ms-logistica.log
+20:33:05,635 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [./logs/ms-logistica.log]
+20:33:05,636 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC_FILE]
+20:33:05,636 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+20:33:05,636 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC_FILE]
+20:33:05,636 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Attaching appender named [FILE] to AsyncAppender.
+20:33:05,636 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC_FILE] - Setting discardingThreshold to 0
+20:33:05,636 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.tpi.logistica] to DEBUG
+20:33:05,636 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating DEBUG level on Logger[com.tpi.logistica] onto the JUL framework
+20:33:05,637 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.web] to INFO
+20:33:05,637 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.springframework.web] onto the JUL framework
+20:33:05,637 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to DEBUG
+20:33:05,637 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating DEBUG level on Logger[org.springframework.security] onto the JUL framework
+20:33:05,637 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate] to INFO
+20:33:05,637 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.springframework.boot.actuate] onto the JUL framework
+20:33:05,637 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+20:33:05,637 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+20:33:05,637 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.postgresql] to INFO
+20:33:05,637 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[org.postgresql] onto the JUL framework
+20:33:05,637 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+20:33:05,638 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@609640d5 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+20:33:05,638 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+20:33:05,638 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC_FILE] to Logger[ROOT]
+20:33:05,638 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79da1ec0 - End of configuration.
+20:33:05,638 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@19fb8826 - Registering current configuration as safe fallback point
 
 
   .   ____          _            __ _ _
@@ -113,48 +113,155 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-20:40:26.538 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
-20:40:26.590 [main] INFO  c.t.logistica.MsLogisticaApplication - Starting MsLogisticaApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 24784 (C:\Users\juanc\Desktop\backend1\ms-logistica\target\ms-logistica-0.0.1-SNAPSHOT.jar started by juanc in C:\Users\juanc\Desktop\backend1\ms-logistica)
-20:40:26.591 [main] DEBUG c.t.logistica.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-20:40:26.592 [main] INFO  c.t.logistica.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
-20:40:27.528 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-20:40:27.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
-20:40:28.339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-20:40:28.360 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-20:40:28.366 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-20:40:28.367 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
-20:40:28.423 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-20:40:28.423 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms
-20:40:28.678 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-20:40:28.770 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-20:40:28.831 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-20:40:29.071 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-20:40:29.092 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-20:40:29.267 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35f760a4
-20:40:29.268 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-20:40:30.164 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-20:40:30.218 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-20:40:30.883 [main] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
-20:40:31.312 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-20:40:31.768 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-20:40:31.784 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-20:40:31.788 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-20:40:31.794 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-20:40:31.804 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-20:40:31.821 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+20:33:05.732 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+20:33:05.820 [main] INFO  c.t.logistica.MsLogisticaApplication - Starting MsLogisticaApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 14748 (C:\Users\Usuario-\IdeaProjects\Proyectofix\ms-logistica\target\ms-logistica-0.0.1-SNAPSHOT.jar started by Usuario- in C:\Users\Usuario-\IdeaProjects\Proyectofix\ms-logistica)
+20:33:05.822 [main] DEBUG c.t.logistica.MsLogisticaApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+20:33:05.823 [main] INFO  c.t.logistica.MsLogisticaApplication - No active profile set, falling back to 1 default profile: "default"
+20:33:07.192 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:33:07.277 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+20:33:08.222 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+20:33:08.240 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+20:33:08.246 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:33:08.247 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+20:33:08.322 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:33:08.323 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2420 ms
+20:33:08.551 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:33:08.644 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+20:33:08.699 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+20:33:09.145 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:33:09.196 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:33:10.283 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+20:33:10.284 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+20:33:10.285 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:292)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.tpi.logistica.MsLogisticaApplication.main(MsLogisticaApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:373)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:277)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 40 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289)
+	... 54 common frames omitted
+20:33:10.288 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+20:33:10.289 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+20:33:10.293 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:33:10.309 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-20:40:31.844 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8081 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
-
+20:33:10.333 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.tpi.logistica.MsLogisticaApplication.main(MsLogisticaApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:153)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:364)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 35 common frames omitted
